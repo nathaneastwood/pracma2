@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+options(pracma2.summarise.inform = FALSE)
+```
+
+<a name="readme-top"></a>
+
+# pracma2
+
+[![CRAN status](https://www.r-pkg.org/badges/version/pracma2)]()
+
+## Overview
+
+This is a very simple package which offers a reimplementation of `pracma::findpeaks()`. `pracma::findpeaks()` uses character strings and regex to find the peaks whereas `pracma2::findpeaks()` uses integers, which is faster.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Installation
+
+You can install the package with
+
+```{r installation, eval = FALSE}
+# install.packages("remotes")
+remotes::install_github("nathaneastwood/pracma2")
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+```{r usage}
+library(pracma2)
+
+x <- c(2, 12, 4, 6, 9, 4, 3, 1, 19, 7)
+
+findpeaks(x)
+
+findpeaks(x, minpeakheight = 15)
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Related Work
+
+* [pracma](https://cran.r-project.org/web/packages/pracma/index.html)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
