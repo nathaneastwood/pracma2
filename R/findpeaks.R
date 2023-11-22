@@ -89,7 +89,7 @@ findpeaks <- function(
     badpeaks <- rep(FALSE, no_peaks)
 
     # eliminate peaks that are close to bigger peaks
-    for (i in seq_along(no_peaks)) {
+    for (i in seq_len(no_peaks)) {
       ipos <- X[i, 2]
       if (!badpeaks[i]) {
         dpos <- abs(ipos - X[, 2])
