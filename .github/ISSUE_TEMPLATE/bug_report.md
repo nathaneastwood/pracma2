@@ -18,7 +18,7 @@ A clear and concise description of what you expected to happen.
 **System Information:**
 Please detail the following information
 - `R.version.string`
-- `packageVersion("poorman")`
+- `packageVersion("pracma2")`
 
 **Additional context**
 Add any other context about the problem here.
